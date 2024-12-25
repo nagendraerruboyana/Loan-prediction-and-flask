@@ -11,7 +11,7 @@ def hello_world():
 
 @app.route('/ping', methods=['GET'])
 def pinger():
-    return f"Hello i am here!!"
+    return {"MESSAGE" : "Hello, I am Ping......!!!!!"}
 
 model = open("./artefacts/classifier.pkl", "rb")
 clf = pickle.load(model)
