@@ -7,11 +7,11 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return "<p>Hello, World!</p>"
+    return "<p>Hello, World V2!</p>"
 
 @app.route('/ping', methods=['GET'])
 def pinger():
-    return {"MESSAGE" : "Hello, I am Ping......!!!!!"}
+    return {"MESSAGE" : "Hello, I am Pinger......!!!!!"}
 
 model = open("./artefacts/classifier.pkl", "rb")
 clf = pickle.load(model)
