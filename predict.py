@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return "<p>Hello, World V2!</p>"
+    return {"MESSAGE" : "Hello, World......!!!!!"}
 
 @app.route('/ping', methods=['GET'])
 def pinger():
